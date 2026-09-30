@@ -1,0 +1,552 @@
+
+.stApp {
+    background: #080f1c !important;
+    color: #e2e8f0 !important;
+}
+
+div[data-testid="stAppViewContainer"] {
+    background: #080f1c !important;
+}
+
+.main {
+    background: #080f1c !important;
+}
+
+.main .block-container {
+    max-width: 1250px;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+
+/* LEFT ACTION RAIL */
+section[data-testid="stSidebar"] {
+    width: 96px !important;
+    min-width: 96px !important;
+    max-width: 96px !important;
+    background: #0b1424 !important;
+    border-right: 1px solid #1e3a5f !important;
+}
+
+
+/* Sidebar inner wrapper */
+section[data-testid="stSidebar"] > div {
+    width: 96px !important;
+    background: #0b1424 !important;
+}
+
+
+/* Sidebar content */
+section[data-testid="stSidebar"] .block-container {
+    width: 96px !important;
+    padding: 24px 0 !important;
+    margin: 0 !important;
+}
+
+
+/* Hide unnecessary sidebar markdown */
+section[data-testid="stSidebar"] .stMarkdown {
+    display: none !important;
+}
+
+
+/* CREATE NEW HOLIDAY BUTTON CONTAINER */
+section[data-testid="stSidebar"] .stButton {
+    width: 96px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* CREATE NEW HOLIDAY BUTTON*/
+section[data-testid="stSidebar"] .stButton > button {
+
+    /* Exact size */
+    width: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
+
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+
+    flex: 0 0 64px !important;
+
+    /* Position */
+    position: relative !important;
+
+    /* Remove default spacing */
+    padding: 0 !important;
+    margin: 0 !important;
+
+    /* Prevent content changing size */
+    overflow: hidden !important;
+
+    /* Shape */
+    border-radius: 16px !important;
+
+    /* Background */
+    background: #111c2d !important;
+
+    /* Border */
+    border: 1px solid #31598c !important;
+
+    /* Shadow */
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.35) !important;
+
+    /* Remove text appearance */
+    color: transparent !important;
+    font-size: 0 !important;
+
+    /* Animation */
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+
+/* HIDE BUTTON TEXT*/
+
+section[data-testid="stSidebar"] .stButton > button p {
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* Button inner elements */
+section[data-testid="stSidebar"] .stButton > button > div {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+section[data-testid="stSidebar"] .stButton > button::before {
+    content: "" !important;
+    position: absolute !important;
+    width: 38px !important;
+    height: 44px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 72'%3E%3Cpath fill='%23f8fafc' d='M12 2h25l15 15v43c0 5.5-4.5 10-10 10H12C6.5 70 2 65.5 2 60V12C2 6.5 6.5 2 12 2z'/%3E%3Cpath fill='%23111c2d' d='M37 2v14c0 3.3 2.7 6 6 6h9z'/%3E%3Crect x='28' y='30' width='8' height='27' rx='4' fill='%231e3a5f'/%3E%3Crect x='18.5' y='39.5' width='27' height='8' rx='4' fill='%231e3a5f'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: contain !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+}
+
+/*CREATE BUTTON HOVER */
+section[data-testid="stSidebar"] .stButton > button:hover {
+    background: #16243a !important;
+    border-color: #3b82f6 !important;
+    box-shadow:
+        0 0 0 1px rgba(59, 130, 246, 0.20),
+        0 0 25px rgba(37, 99, 235, 0.20),
+        0 10px 30px rgba(0, 0, 0, 0.40) !important;
+    transform: translateY(-2px) !important;
+}
+
+/*CREATE BUTTON CLICK */
+section[data-testid="stSidebar"] .stButton > button:active {
+    transform: scale(0.94) !important;
+}
+
+
+/*CREATE BUTTON FOCUS */
+section[data-testid="stSidebar"] .stButton > button:focus {
+    outline: none !important;
+    border-color: #3b82f6 !important;
+    box-shadow:
+        0 0 0 1px rgba(59, 130, 246, 0.25),
+        0 0 20px rgba(37, 99, 235, 0.18) !important;
+}
+
+
+/*MAIN TITLE */
+
+.hp-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #f8fafc;
+    margin-bottom: 0.35rem;
+    letter-spacing: -0.5px;
+}
+
+.hp-title-accent {
+    color: #22d3ee;
+}
+
+.hp-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*FORM CARD*/
+.hp-card {
+    background: #111c2d;
+    border: 1px solid #26364d;
+    border-radius: 18px;
+    padding: 1.6rem 1.8rem;
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.22);
+}
+
+/*SECTION HEADINGS */
+.hp-section-title {
+    color: #f8fafc;
+    font-size: 1.35rem;
+    font-weight: 750;
+    margin-bottom: 0.25rem;
+}
+
+.hp-section-subtitle {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+
+/* LABELS */
+label {
+    color: #e2e8f0 !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stWidgetLabel"] p {
+    color: #e2e8f0 !important;
+    font-weight: 600 !important;
+}
+
+/* TEXT INPUTS */
+div[data-baseweb="input"] {
+    background: #0f1a2b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 10px !important;
+}
+
+div[data-baseweb="input"] input {
+    color: #f8fafc !important;
+    background: transparent !important;
+}
+
+div[data-baseweb="input"] input::placeholder {
+    color: #64748b !important;
+}
+
+div[data-baseweb="input"]:focus-within {
+    border-color: #06b6d4 !important;
+    box-shadow:
+        0 0 0 1px #06b6d4 !important;
+}
+
+
+/*SELECT BOX*/
+
+div[data-baseweb="select"] > div {
+    background: #0f1a2b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 10px !important;
+}
+
+div[data-baseweb="select"] span {
+    color: #e2e8f0 !important;
+}
+
+div[data-baseweb="select"]:focus-within > div {
+    border-color: #06b6d4 !important;
+}
+
+/* Dropdown */
+div[role="listbox"] {
+    background: #111c2d !important;
+    border: 1px solid #334155 !important;
+}
+
+div[role="option"] {
+    color: #e2e8f0 !important;
+}
+
+div[role="option"]:hover {
+    background: #1e3a5f !important;
+}
+
+/* NUMBER INPUT*/
+div[data-testid="stNumberInput"] div[data-baseweb="input"] {
+    background: #0f1a2b !important;
+    border: 1px solid #334155 !important;
+}
+
+div[data-testid="stNumberInput"] button {
+    background: #172235 !important;
+    color: #94a3b8 !important;
+    border: none !important;
+}
+
+div[data-testid="stNumberInput"] button:hover {
+    background: #1e3a5f !important;
+    color: #67e8f9 !important;
+}
+
+/* MULTISELECT= */
+
+div[data-testid="stMultiSelect"] div[data-baseweb="select"] > div {
+    background: #0f1a2b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 10px !important;
+}
+
+div[data-baseweb="tag"] {
+    background: #164e63 !important;
+    color: #cffafe !important;
+    border-radius: 7px !important;
+}
+
+div[data-baseweb="tag"] span {
+    color: #cffafe !important;
+}
+
+
+/*GENERATE BUTTON */
+
+button[kind="formSubmit"] {
+    background: #2563eb !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    min-height: 48px !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+
+button[kind="formSubmit"]:hover {
+    background: #3b82f6 !important;
+    transform: translateY(-1px) !important;
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.20) !important;
+}
+
+button[kind="formSubmit"]:active {
+    transform: translateY(0) !important;
+}
+
+/* RESULT PAGE*/
+.hp-result-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #f8fafc;
+    margin-bottom: 0.3rem;
+}
+
+
+.hp-result-subtitle {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+
+/*  PDF DOWNLOAD BUTTON */
+
+button[kind="secondary"] {
+    border-radius: 10px !important;
+    border: 1px solid #334155 !important;
+    background: #172235 !important;
+    color: #e2e8f0 !important;
+    font-weight: 650 !important;
+    min-height: 45px !important;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease !important;
+}
+
+
+button[kind="secondary"]:hover {
+    border-color: #06b6d4 !important;
+    color: #67e8f9 !important;
+    background: #1e293b !important;
+}
+
+/* EXPANDERS */
+div[data-testid="stExpander"] {
+    background: #111c2d !important;
+    border: 1px solid #26364d !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+
+div[data-testid="stExpander"]:hover {
+    border-color: #334155 !important;
+}
+
+div[data-testid="stExpander"] summary {
+    color: #f8fafc !important;
+}
+
+div[data-testid="stExpander"] p {
+    color: #cbd5e1;
+}
+
+/*CHAT */
+div[data-testid="stChatMessage"] {
+    background: #111c2d;
+    border: 1px solid #26364d;
+    border-radius: 12px;
+}
+
+
+div[data-testid="stChatInput"] {
+    background: #0f1a2b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 12px !important;
+}
+
+
+div[data-testid="stChatInput"] textarea {
+    color: #f8fafc !important;
+    background: transparent !important;
+}
+
+div[data-testid="stChatInput"]:focus-within {
+    border-color: #06b6d4 !important;
+    box-shadow:
+        0 0 0 1px rgba(6, 182, 212, 0.25) !important;
+}
+
+/*MARKDOWN*/
+.stMarkdown {
+    color: #cbd5e1;
+}
+
+.stMarkdown h1,
+.stMarkdown h2,
+.stMarkdown h3,
+.stMarkdown h4 {
+    color: #f8fafc !important;
+}
+
+.stMarkdown strong {
+    color: #f8fafc;
+}
+
+.stMarkdown a {
+    color: #22d3ee !important;
+}
+
+/* DIVIDERS */
+hr {
+    border-color: #26364d !important;
+}
+
+/*  ALERTS */
+div[data-testid="stAlert"] {
+    border-radius: 10px !important;
+}
+
+
+/*SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #080f1c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #26364d;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #31598c;
+}
+
+
+@media (max-width: 768px) {
+    .main .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+    }
+
+
+    .hp-title {
+        font-size: 2rem;
+    }
+
+
+    .hp-result-title {
+        font-size: 2rem;
+    }
+
+
+    .hp-card {
+        padding: 1.2rem;
+    }
+
+
+    /* Smaller action rail */
+    section[data-testid="stSidebar"] {
+        width: 76px !important;
+        min-width: 76px !important;
+        max-width: 76px !important;
+    }
+
+
+    section[data-testid="stSidebar"] > div {
+        width: 76px !important;
+    }
+
+
+    section[data-testid="stSidebar"] .block-container {
+        width: 76px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+
+    section[data-testid="stSidebar"] .stButton {
+        width: 76px !important;
+    }
+
+
+    section[data-testid="stSidebar"] .stButton > button {
+        width: 56px !important;
+        min-width: 56px !important;
+        max-width: 56px !important;
+        height: 56px !important;
+        min-height: 56px !important;
+        max-height: 56px !important;
+        flex: 0 0 56px !important;
+    }
+
+    section[data-testid="stSidebar"] .stButton > button::before {
+        width: 34px !important;
+        height: 40px !important;
+    }
+}
